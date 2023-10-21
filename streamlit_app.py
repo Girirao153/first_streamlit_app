@@ -66,7 +66,7 @@ def get_fruit_load_list():
     my_cur.execute("SELECT * FROM fruit_load_list")
     my_data_rows = my_cur.fetchall()
     streamlit.header("View Our Fruit List - Add Your Favorites!")
-    #streamlit.dataframe(my_data_rows)
+    streamlit.dataframe(my_data_rows)
     
 
 if streamlit.button('Get Fruit List'):
